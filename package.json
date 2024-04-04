@@ -1,0 +1,125 @@
+{
+  "name": "hister",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@aws-amplify/auth": "^4.3.10",
+    "@babel/runtime": "^7.15.4",
+    "@brainhubeu/react-carousel": "^2.0.4",
+    "@date-io/date-fns": "^2.11.0",
+    "@date-io/moment": "^2.11.0",
+    "@emotion/cache": "^11.7.1",
+    "@emotion/react": "^11.7.1",
+    "@emotion/server": "latest",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/lab": "^5.0.0-alpha.64",
+    "@mui/material": "^5.2.8",
+    "@mui/styles": "^5.2.3",
+    "@mui/x-data-grid": "^5.2.2",
+    "@mui/x-data-grid-generator": "^5.2.2",
+    "@mui/x-data-grid-pro": "^5.2.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "ag-grid-react": "^31.2.0",
+    "axios": "^0.21.4",
+    "axios-mock-adapter": "^1.20.0",
+    "clsx": "^1.1.1",
+    "date-fns": "^2.23.0",
+    "firebase": "^9.0.2",
+    "formik": "^2.4.5",
+    "formik-material-ui-pickers": "^1.0.0-alpha.1",
+    "moment": "^2.29.1",
+    "next": "latest",
+    "next-seo": "^4.28.1",
+    "next-transpile-modules": "^9.0.0",
+    "prism-react-renderer": "^1.2.1",
+    "prop-types": "^15.7.2",
+    "react": "^18.2.0",
+    "react-bottom-scroll-listener": "^5.0.0",
+    "react-code-input": "^3.10.1",
+    "react-content-loader": "^6.0.3",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^11.4.0",
+    "react-icons": "^4.12.0",
+    "react-intl": "^5.20.10",
+    "react-phone-input-2": "^2.15.1",
+    "react-phone-number-input": "^3.3.10",
+    "react-popper": "^2.2.5",
+    "react-redux": "^7.2.5",
+    "react-render-html": "^0.6.0",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^6.22.3",
+    "react-router-redux": "^4.0.8",
+    "react-slick": "^0.28.1",
+    "react-social-login-buttons": "^4.1.0",
+    "reactjs-social-login": "^2.6.3",
+    "redux": "^4.1.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0",
+    "simplebar-react": "^2.3.5",
+    "slick-carousel": "^1.8.1",
+    "stylis-plugin-rtl": "^2.1.0",
+    "yup": "^1.4.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "lint": "eslint \"src/**/*.+(js|jsx)\"",
+    "lint:fix": "eslint --fix \"src/**/*.+(js|jsx)\"",
+    "format": "prettier --write \"src/**/*.+(js|jsx)\"",
+    "precommit": "lint-staged"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.3",
+    "babel-plugin-inline-react-svg": "^2.0.1",
+    "commitlint-config-jira": "^1.4.1",
+    "commitlint-plugin-jira-rules": "^1.4.0",
+    "eslint": "^8.7.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.28.0",
+    "husky": "^4.3.7",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.+(js|jsx)": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.+(json|md)": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
